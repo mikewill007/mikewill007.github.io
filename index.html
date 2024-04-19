@@ -8,7 +8,10 @@
     <style>
         body {
             padding: 20px;
-            background-color: #F4F4F4; /* Light gray background */
+            background-color: #f3efdd; /* Light gray background */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         .top-bar {
             height: 10px;
@@ -17,12 +20,18 @@
             top: 0;
             z-index: 1000;
         }
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #f3f3eb; /* Light beige background */
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"> <!-- Adding sticky-top class -->
-    <a class="navbar-brand" href="#">Mike Williams</a>
+    <a class="navbar-brand" >Mike Williams</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -30,7 +39,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -54,20 +63,27 @@
                 <span class="badge badge-primary">Vue</span>
                 <span class="badge badge-info">JavaScript</span>
                 <span class="badge badge-info">TypeScript</span>
+                <span class="badge badge-success">SQL</span>
+                <span class="badge badge-success">Cypher</span>
                 <span class="badge badge-warning">Java</span>
                 <span class="badge badge-warning">C</span>
                 <span class="badge badge-warning">C#</span>
-                <span class="badge badge-warning">VisualBasic</span>
-                <span class="badge badge-success">SQL</span>
-                <span class="badge badge-success">Cypher</span>
+                <span class="badge badge-danger">VisualBasic</span>
                 <span class="badge badge-secondary">Bash</span>
                 <span class="badge badge-secondary">Perl</span>
+                <span class="badge badge-dark">Swift</span>
+                <span class="badge badge-dark">Xamarin</span>
             </div>
             <div class="mt-3">
                 <h2>About Me</h2>
                 <p><strong>Occupation:</strong> Aspiring Web Developer & System Administrator</p>
                 <p><strong>Location:</strong> Saskatoon, Saskatchewan</p>
-                <p>I am deeply passionate about technology and development, constantly seeking to expand my skills and knowledge in this ever-evolving field. With a keen eye for detail and a relentless drive for innovation, I thrive on the challenges presented by complex coding tasks. My dedication to crafting elegant, efficient solutions is matched only by my enthusiasm for collaborating with like-minded professionals to bring projects to fruition. As a forward-thinking individual, I embrace the opportunity to leverage cutting-edge technologies to create transformative digital experiences. I am eager to contribute my expertise and enthusiasm to dynamic teams, where I can make meaningful contributions and continue to grow as a web developer.</p>
+                <p>I am deeply passionate about technology and development, constantly seeking to expand my skills and knowledge
+                    in this ever-evolving field. With a keen eye for detail and a relentless drive for innovation, I thrive on the challenges
+                    presented by complex coding tasks. My dedication to crafting elegant, efficient solutions is matched only by my enthusiasm
+                    for collaborating with like-minded professionals to bring projects to fruition. As a forward-thinking individual, I embrace
+                    the opportunity to leverage cutting-edge technologies to create transformative digital experiences. I am eager to contribute
+                    my expertise and enthusiasm to dynamic teams, where I can make meaningful contributions and continue to grow as a web developer.</p>
             </div>
         </div>
         <div class="col-md-8">
@@ -89,6 +105,7 @@
             <p><strong>CST Diploma</strong> | Saskatchewan Polytechnic, Saskatoon, Saskatchewan | Graduating: June 2024</p>
             <ul>
                 <li>Developed and maintained web applications using HTML, CSS, JavaScript.</li>
+                <li>Developed mobile apps with cross-platform functionality for both Android and IOS devices.</li>
                 <li>Collaborated with a team of developers to design and implement user-friendly interfaces.</li>
                 <li>Acquired proficiency in server administration, including managing Azure cloud services, Linux servers, and databases.</li>
                 <li>Gained hands-on experience with computer hardware components and troubleshooting techniques.</li>
@@ -101,10 +118,9 @@
     </div>
 </div>
 
-<footer class="text-muted mt-5">
+<footer class="footer mt-auto py-3">
     <div class="container">
-        <p>Author: Mike Williams</p>
-        <p>Last Updated: [Insert Date Here]</p>
+        <p class="text-muted text-center">Author: Mike Williams | Last edited: April 19, 2024</p>
     </div>
 </footer>
 
