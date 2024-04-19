@@ -2,12 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mike Williams's Portfolio</title>
-    <!-- Add Bootstrap CSS CDN link -->
+    <title>About Mike Williams</title>
+    <!-- Bootstrap CSS CDN link -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #F4F4F4; /* Light gray background */
+        }
+        .top-bar {
+            height: 10px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"> <!-- Adding sticky-top class -->
     <a class="navbar-brand" href="#">Mike Williams</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -16,10 +30,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -31,27 +42,73 @@
     </div>
 </nav>
 
-<div class="container mt-5">
+<div class="container">
     <div class="row">
-        <div class="col-md-6">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet libero non tortor consequat fermentum. Aliquam erat volutpat.</p>
-        </div>
-        <div class="col-md-6">
-            <h2>My Portfolio</h2>
-            <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Project 1</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">View Project</a>
-                </div>
+        <div class="col-md-4">
+            <img src="images/Mike_Headshot.png" class="img-fluid rounded-circle" alt="Mike Williams">
+            <div class="mt-3">
+                <span class="badge badge-primary">HTML</span>
+                <span class="badge badge-primary">CSS</span>
+                <span class="badge badge-primary">Bootstrap</span>
+                <span class="badge badge-primary">React</span>
+                <span class="badge badge-primary">Vue</span>
+                <span class="badge badge-info">JavaScript</span>
+                <span class="badge badge-info">TypeScript</span>
+                <span class="badge badge-warning">Java</span>
+                <span class="badge badge-warning">C</span>
+                <span class="badge badge-warning">C#</span>
+                <span class="badge badge-warning">VisualBasic</span>
+                <span class="badge badge-success">SQL</span>
+                <span class="badge badge-success">Cypher</span>
+                <span class="badge badge-secondary">Bash</span>
+                <span class="badge badge-secondary">Perl</span>
             </div>
+            <div class="mt-3">
+                <h2>About Me</h2>
+                <p><strong>Occupation:</strong> Aspiring Web Developer & System Administrator</p>
+                <p><strong>Location:</strong> Saskatoon, Saskatchewan</p>
+                <p>I am deeply passionate about technology and development, constantly seeking to expand my skills and knowledge in this ever-evolving field. With a keen eye for detail and a relentless drive for innovation, I thrive on the challenges presented by complex coding tasks. My dedication to crafting elegant, efficient solutions is matched only by my enthusiasm for collaborating with like-minded professionals to bring projects to fruition. As a forward-thinking individual, I embrace the opportunity to leverage cutting-edge technologies to create transformative digital experiences. I am eager to contribute my expertise and enthusiasm to dynamic teams, where I can make meaningful contributions and continue to grow as a web developer.</p>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="mt-5"> <!-- Adding whitespace -->
+                <h2>Work Experience</h2>
+                <p><strong>Warehouse Hand</strong> | Saskatoon Labour Savers, Saskatoon, Saskatchewan | August 2018 - August 2023</p>
+                <ul>
+                    <li>Unloaded and took inventory of incoming freight.</li>
+                    <li>Trained new employees on proper workplace procedure and safety.</li>
+                </ul>
+                <p><strong>Phase 2 Operator</strong> | Maple Leaf Foods, Saskatoon, Saskatchewan | June 2014 - December 2016</p>
+                <ul>
+                    <li>Operated mixing equipment and machinery to prepare meat products for the HotRod production line.</li>
+                    <li>Ensured adherence to strict quality control standards and safety regulations throughout the production process.</li>
+                    <li>Collaborated with team members to meet production targets and maintain efficient workflow.</li>
+                </ul>
+            </div>
+            <h2>Education</h2>
+            <p><strong>CST Diploma</strong> | Saskatchewan Polytechnic, Saskatoon, Saskatchewan | Graduating: June 2024</p>
+            <ul>
+                <li>Developed and maintained web applications using HTML, CSS, JavaScript.</li>
+                <li>Collaborated with a team of developers to design and implement user-friendly interfaces.</li>
+                <li>Acquired proficiency in server administration, including managing Azure cloud services, Linux servers, and databases.</li>
+                <li>Gained hands-on experience with computer hardware components and troubleshooting techniques.</li>
+            </ul>
+            <p><strong>Bachelor of Arts & Science (2 Years Completed)</strong> | University of Saskatchewan, Saskatoon, Saskatchewan</p>
+            <ul>
+                <li>Took classes for nursing degree prerequisite path.</li>
+            </ul>
         </div>
     </div>
 </div>
 
-<!-- Add Bootstrap JS and jQuery CDN links for Bootstrap features (like navbar toggling) -->
+<footer class="text-muted mt-5">
+    <div class="container">
+        <p>Author: Mike Williams</p>
+        <p>Last Updated: [Insert Date Here]</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and jQuery CDN links for Bootstrap features -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
 </body>
